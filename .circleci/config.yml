@@ -31,4 +31,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - unittest
+      - unittest:
+          requires:
+            - say-hello
